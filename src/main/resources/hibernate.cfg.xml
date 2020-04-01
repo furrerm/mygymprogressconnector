@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/my_gym_progress</property>
+
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+    <property name="connection.username">postgres2</property> <!-- DB User -->
+    <property name="connection.password">cindy1986</property> <!-- DB Password -->
+
+
+
+    <mapping class="ch.lu.home.mygymprogress.entities.ExerciseEntity"/>
+    <mapping class="ch.lu.home.mygymprogress.entities.RoutineEntity"/>
+    <mapping class="ch.lu.home.mygymprogress.entities.SetsEntity"/>
+
+  </session-factory>
+</hibernate-configuration>
